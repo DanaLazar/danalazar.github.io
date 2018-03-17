@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proiect responsive Vanilla CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--Meniul-->	
+	<nav>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" id="logo"><h1>Gourmet Travel</h1></a>
+			<a href="despre.html"><h3>Despre</h3></a>
+			<a href="article.html" class="active"><h3>Destinatii</h3></a>
+			<a href="contact.html"><h3>Contact</h3></a>
+			<a href="javascript:void(0);" style="font-size:15px;" 
+			class="icon" onclick="myFunction()">&#9776;</a>
+		</div>	
+	</nav>
+	
+	<div class="continut">
+
+<!--Header-->
+		<header id="imagine-principala">
+			<img src="images/gourmet-article5.jpg">
+			<h2 class="titlu-imagine">Sushi symphony in five movements</h2>
+			<h4 class="text-imagine">London</h4>
+			<h4 class="text-imagine1">11-07.2018</h4>
+			<h4 class="text-imagine2">105 Eur</h4>
+		</header>
+
+<!--Continut Articol-->
+		<article class="main">
+			<div class="aside">
+				<div id="map" style="width:400px;height:400px;"></div>
+				<section id="restaurante">
+					<h3>Restaurante din traseu</h3>
+					
+						<button class="accordion">Sushisamba</button>
+							<div class="panel">
+								<p>98 Lillie Rd, Hammersmith, London SW6 7SR, Regatul Unit</p>
+							</div>
+						
+						<button class="accordion">Sticks'n'Sushi</button>
+							<div class="panel">
+								<p>11 Henrietta St, London WC2E 8PY, Regatul Unit</p>
+							</div>
+						
+						<button class="accordion">Sake no Hana</button>
+							<div class="panel">
+								<p>37 Charlotte St, Fitzrovia, London W1T 1RR, Regatul Unit</p>
+							</div>
+						
+						<button class="accordion">Sushi Tetsu</button>
+							<div class="panel">
+								<p>12 Jerusalem Passage, Clerkenwell, London EC1V 4JP, Regatul Uni</p>
+							</div>
+						
+					
+				</section>
+				<section id="meniul">
+					<h3>Ce vei degusta</h3>
+					<dl>
+						<dt>Nigiri</dt><dd>A topping, usually fish, served on top of sushi rice</dd><br>
+						<dt>Sashimi</dt><dd>Fish or shellfish served alone (no rice)</dd><br>
+						<dt>Maki</dt><dd>Rice and filling wrapped in seaweed</dd><br>
+						<dt>Uramaki</dt><dd>	
+	Similar to the above, but rice is on the outside and seaweed wraps around the filling</dd><br>
+						<dt>Temaki</dt><dd>	
+	Sushi that has been hand-rolled into a cone shape</dd>
+					</dl>
+				</section>
+			</div>
+			<div class="text">
+				<h1>Subtitlul primului articol este o chestie super interesanta</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. </p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<h1>Aici vine inca un subtitlu</h1>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>		
+		</article>		
+
+<!--Alte articole-->
+		<div class="container-gallery">
+			<h1>Alte destinatii gurmande</h1>
+
+			<div class="gallery">
+			  <a href="#">
+			    <img src="images/gourmet-article1.jpg" alt="">
+			  </a>
+			  <div class="desc">Add a description of the image here</div>
+			</div>
+
+			<div class="gallery">
+			  <a href="#">
+			    <img src="images/gourmet-article2.jpg" alt="">
+			  </a>
+			  <div class="desc">Add a description of the image here</div>
+			</div>
+
+			<div class="gallery">
+			  <a href="#">
+			    <img src="images/gourmet-article3.jpg" alt="">
+			  </a>
+			  <div class="desc">Add a description of the image here</div>
+			</div>
+
+			<div class="gallery">
+			  <a href="#">
+			    <img src="images/gourmet-article4.jpg" alt="">
+			  </a>
+			  <div class="desc">Add a description of the image here</div>
+			</div>
+
+			<div class="gallery">
+			  <a href="#">
+			    <img src="images/gourmet-article1.jpg" alt="">
+			  </a>
+			  <div class="desc">Add a description of the image here</div>
+			</div>
+
+			<div class="gallery">
+			  <a href="#">
+			    <img src="images/gourmet-article2.jpg" alt="">
+			  </a>
+			  <div class="desc">Add a description of the image here</div>
+			</div>
+
+		</div>
+		
+		
+<!--Footer-->	
+	<footer>
+		<p>&copy Gourmet Travel 2018</p>
+	</footer>
+<!--Java Script-->
+<script>
+
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.4872289, -0.248959),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+
+// function myFunction() {
+//     var x = document.getElementById("myTopnav");
+//     if (x.className === "topnav") {
+//         x.className += " responsive";
+//     } else {
+//         x.className = "topnav";
+//     }
+// }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

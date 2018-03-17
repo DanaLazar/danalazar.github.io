@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proiect responsive Vanilla CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--Meniul-->	
+	<nav>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" id="logo"><h1>Gourmet Travel</h1></a>
+			<a href="despre.html"><h3>Despre</h3></a>
+			<a href="article.html"><h3>Destinatii</h3></a>
+			<a href="contact.html" class="active"><h3>Contact</h3></a>
+			<a href="javascript:void(0);" style="font-size:15px;" 
+			class="icon" onclick="myFunction()">&#9776;</a>
+		</div>	
+	</nav>
+	
+	<div class="continut">
+
+
+<!--Contact-->
+		<div id="contact">
+			<h1>Contact</h1>
+			<p>
+						We offer full-service gourmet travelling. We understand your needs and we will satisfy criteria of them all. Do not hesitate to contact us. Send message:
+			</p>
+			<p>Nume:  <input type="text" name="nume"></p>
+			<p>Email:  <input type="email" name="email"></p>
+			<p>Mesaj:</p> <textarea rows="4" cols="60"></textarea>
+			<p><input type="button" name="Trimite" value="Trimite"></p>
+		</div>
+
+		<div id="sidebar">
+			<p>
+						You can also contact us by phone 00553123-2323 or email catering@catering.com
+			</p>
+		</div>			
+	</div>
+
+	
+		
+<!--Footer-->	
+	<footer>
+		<p>&copy Gourmet Travel 2018</p>
+	</footer>
+<!--Java Script-->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+</script>
+</body>
+</html>
